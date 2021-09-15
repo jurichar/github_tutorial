@@ -1,4 +1,6 @@
-#  GitHub Tutorial!
+#  Git Tutorial!
+
+*Parce que git, plus on s'y connait mieux c'est !*
 
 - git **`add`** 
 	-
