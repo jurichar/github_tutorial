@@ -12,11 +12,11 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **add**
 
-| cmd                                                   | description                                                                       |
-| ----------------------------------------------------- | --------------------------------------------------------------------------------- |
-| git add                                               | ajoute un changement dans le répertoire de travail à la zone de staging.          |
-| - `add` <span style="color:yellow"> file </span>. | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
-| - `add <directory>`                                   | permet de stager tous les changements dans `<répertoire>` pour le commit suivant. |
+| cmd                 | description                                                                       |
+| ------------------- | --------------------------------------------------------------------------------- |
+| git add             | ajoute un changement dans le répertoire de travail à la zone de staging.          |
+| - `add <file>`      | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
+| - `add <directory>` | permet de stager tous les changements dans `<répertoire>` pour le commit suivant. |
 
 ## git **commit**
 
@@ -28,12 +28,6 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | `git commit -ammend`      | modifie le dernier commit au lieu d'en creer un nouveau.              |
 
 ## git **pull**
-
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
-
-## git **squash**
 
 | cmd | description |
 | --- | ----------- |
@@ -90,9 +84,14 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **branch**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+| cmd                             | description                                     |
+| ------------------------------- | ----------------------------------------------- |
+| git branch                      | permet la gestion des `branch` d'un depot.      |
+| - `branch` (ou `branch --list`) | permet de lister toutes les `branch` du depot.  |
+| - `branch <branch>`             | permet de creer une `branch`.                   |
+| - `branch -d <branch>`          | permet de supprimer une `branch`.               |
+| - `branch -D <branch>`          | permet de forcer la suppression d'une `branch`. |
+| - `branch -m <branch>`          | permet de renommer une `branch`.                |
 
 ## git **checkout**
 
@@ -105,15 +104,41 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **merge**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+`git merge <branch>` combine plusieurs sequences de commit.
+
+la `branch` sur laquel nous sommes sera `merge` avec la `branch` en parametre.
+
+en cas de conflit pendant ce processus nous aurons 3 indicateurs :
+
+- `<<<<<<<`
+- `=======`
+- `>>>>>>>`
+
+le contenu avant `=======` represente la `branch` cible et la partie apres represente la `branch` a `merge`.
+
+le reste du code ne sera pas affecte par le conflit.
 
 ## git **rebase**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+| cmd        | description                                                         |
+| ---------- | ------------------------------------------------------------------- |
+| git rebase | permet de changer la base de la `branch` d'un commit vers un autre. |
+| - `rebase <base>` | applique automatiquement le `rebase`. |
+| - `rebase -- i <base>` | applique le `rebase` en mode interactif*. |
+
+p, pick = use commit
+
+r, reword = use commit, but edit the commit message
+
+e, edit = use commit, but stop for amending
+
+s, squash = use commit, but meld into previous commit
+
+f, fixup = like “squash”, but discard this commit’s log message
+
+x, exec = run command (the rest of the line) using shell
+
+d, drop = remove commit
 
 ## git **remote**
 
