@@ -15,7 +15,7 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | cmd                                                   | description                                                                       |
 | ----------------------------------------------------- | --------------------------------------------------------------------------------- |
 | git add                                               | ajoute un changement dans le répertoire de travail à la zone de staging.          |
-| - `add` <span style="color:yellow"> < file > </span>. | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
+| - `add` <span style="color:yellow"> file </span>. | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
 | - `add <directory>`                                   | permet de stager tous les changements dans `<répertoire>` pour le commit suivant. |
 
 ## git **commit**
