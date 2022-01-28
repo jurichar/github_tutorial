@@ -12,9 +12,9 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **add**
 
-| cmd                   | description                                                                       |
-| --------------------- | --------------------------------------------------------------------------------- |
-| git add               | ajoute un changement dans le répertoire de travail à la zone de staging.          |
+| cmd                 | description                                                                       |
+| ------------------- | --------------------------------------------------------------------------------- |
+| git add             | ajoute un changement dans le répertoire de travail à la zone de staging.          |
 | - `add <file>`      | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
 | - `add <directory>` | permet de stager tous les changements dans `<répertoire>` pour le commit suivant. |
 
@@ -25,8 +25,15 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | git commit                | permet d'archiver les changements ajouter (`git add` ou `git stage`). |
 | `git commit`              | permet d'archiver les changements puis demande un message.            |
 | `git commit -m "message"` | permet d'archiver les changement sans demander de message.            |
+| `git commit -ammend`      | modifie le dernier commit au lieu d'en creer un nouveau.              |
 
 ## git **pull**
+
+| cmd | description |
+| --- | ----------- |
+| 1   | 0           |
+
+## git **squash**
 
 | cmd | description |
 | --- | ----------- |
@@ -46,9 +53,11 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **revert**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+| cmd           | description                                                                                                                         |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| git revert    | utilisée pour annuler des changements apportés à l'historique de commits d'un dépôt (un `undo` pour git) et cree un nouveau commit. |
+| - `revert -e` | ouvrira l'editeur pour modifier le message de `commit`.                                                                             |
+| - `revert -n` | git revert ne fera pas de nouveau commit.                                                                                           |
 
 ## git **rm**
 
@@ -64,15 +73,20 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **fetch**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+| cmd                         | description                                                                                 |
+| --------------------------- | ------------------------------------------------------------------------------------------- |
+| git fetch                   | telecharge des commits, des fichiers et des refs d'un depot distant vers votre depot local. |
+| - `fetch <remote>`          | `fetch` toutes les `branch`, les fichiers et les `commits` du depot.                        |
+| - `fetch <remote> <branch>` | comme la commande ci-dessus, mais fetche uniquement la `branch` specifiee.                  |
+| - `fetch --all`             | fetch de tous les depots distants enregistres et de leurs `branch`.                         |
 
 ## git **push**
 
-| cmd  | description                                                                 |
-| ---- | --------------------------------------------------------------------------- |
-| push | permet de transférer les commits de votre dépôt local vers un dépôt distant |
+| cmd                        | description                                                                 |
+| -------------------------- | --------------------------------------------------------------------------- |
+| - `git push`               | permet de transférer les commits de votre dépôt local vers un dépôt distant |
+| - `push <remote> <branch>` | permet de push la `branch` vers le `remote`                                 |
+| - `push -f` (ou `--force`) | permet de forcer un push                                                    |
 
 ## git **branch**
 
@@ -82,9 +96,12 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **checkout**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+| cmd                                   | description                                                         |
+| ------------------------------------- | ------------------------------------------------------------------- |
+| git checkout                          | permet de basculer entre les `branch`.                              |
+| - `checkout <branch>`                 | permet de basculer entre les `branch` existante.                    |
+| - `checkout -b <new-branch>`          | permet de basculer sur une `new-branch`.                            |
+| - `checkout -b <new-branch> <branch>` | permet de basculer sur une `new-branch` qui prend en base `branch`. |
 
 ## git **merge**
 
@@ -112,6 +129,6 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **log**
 
-| cmd | description |
-| --- | ----------- |
-| 1   | 0           |
+| cmd     | description                               |
+| ------- | ----------------------------------------- |
+| git log | affiche l'historique des commit du depot. |
