@@ -12,11 +12,11 @@ _Parce que git, plus on s'y connait mieux c'est !_
 
 ## git **add**
 
-| cmd               | description                                                                       |
-| ----------------- | --------------------------------------------------------------------------------- |
-| add               | ajoute un changement dans le répertoire de travail à la zone de staging.          |
-| `add <file>`      | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
-| `add <directory>` | permet de stager tous les changements dans `<répertoire>` pour le commit suivant. |
+| cmd                   | description                                                                       |
+| --------------------- | --------------------------------------------------------------------------------- |
+| git add               | ajoute un changement dans le répertoire de travail à la zone de staging.          |
+| `- add <file>`      | permet de stager tous les changements dans `<fichier>` pour le commit suivant.    |
+| `- add <directory>` | permet de stager tous les changements dans `<répertoire>` pour le commit suivant. |
 
 ## git **commit**
 
