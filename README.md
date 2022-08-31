@@ -27,6 +27,7 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | `git commit -m "message"` | permet d'archiver les changement sans demander de message.            |
 | `git commit -ammend`      | modifie le dernier commit au lieu d'en creer un nouveau.              |
 
+<!--
 ## git **pull**
 
 | cmd | description |
@@ -44,6 +45,7 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | cmd | description |
 | --- | ----------- |
 | 1   | 0           |
+-->
 
 ## git **revert**
 
@@ -53,6 +55,7 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | - `revert -e` | ouvrira l'editeur pour modifier le message de `commit`.                                                                             |
 | - `revert -n` | git revert ne fera pas de nouveau commit.                                                                                           |
 
+<!--
 ## git **rm**
 
 | cmd | description |
@@ -64,6 +67,14 @@ _Parce que git, plus on s'y connait mieux c'est !_
 | cmd | description |
 | --- | ----------- |
 | 1   | 0           |
+
+## git **cherry-pick**
+
+| cmd | description |
+| --- | ----------- |
+| 1   | 0           |
+
+-->
 
 ## git **fetch**
 
@@ -140,6 +151,7 @@ x, exec = run command (the rest of the line) using shell
 
 d, drop = remove commit
 
+<!-- 
 ## git **remote**
 
 | cmd | description |
@@ -151,6 +163,7 @@ d, drop = remove commit
 | cmd | description |
 | --- | ----------- |
 | 1   | 0           |
+-->
 
 ## git **log**
 
